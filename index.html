@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-us">
+
+<head>
+    <title>Form Basics</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="space.css">
+</head>
+
+<body>
+    <main>
+        <h1>Test Form</h1>
+
+        <form action="success.html" method="get">
+
+            <label for="name">Name</label>
+            <input name="name" id="name" type="text">
+            <br>
+            <label for="email">Email</label>
+            <input name="email" id="email" type="email" required placeholder="me@example.com">
+            <br>
+            <label for="password">Password</label>
+            <input name="password" id="password" type="password">
+            <br>
+            <label for="search">Search</label>
+            <input name="search" id="search" type="search" placeholder="&#1234567;">
+            <br>
+            <label for="phone">Phone Number</label>
+            <input name="phone" id="phone" type="tel">
+            <br>
+            <label for="textarea">Text Area</label>
+            <textarea name="textarea" id="textarea" cols="30" rows="15"></textarea>
+            <br>
+            <label for="date">Date</label>
+            <input name="date" id="date" type="date">
+            <br>
+            <label for="color">Color</label>
+            <input name="color" id="color" type="color">
+            <br>
+            <label for="file">File</label>
+            <input name="file" id="file" type="file" accept="image/*" multiple>
+            <br>
+            <label for="checkbox">Checkbox</label>
+            <input name="simplecheckbox" id="checkbox" type="checkbox" value="The checkbox is checked" checked>
+            <br>
+            <label for="selectlist">Choose one</label>
+            <select name="selectlist" id="selectlist">
+            <option>First option</option>
+            <option>Second option</option>
+            <option>Third option</option>
+            </select>
+            <br>
+            <fieldset>
+                <legend>Checkboxes in a fieldset</legend>
+                <input id="thischeck" name="checkboxlist" type="checkbox" value="This" Checked>
+                <label for="thischeck">This</label>
+                <br>
+                <input id="orchck" name="checkboxlist" type="checkbox" value="That">
+                <label for="orcheck">And/Or</label>
+                <br>
+                <input id="thatcheck" name="checkboxlist" type="checkbox" value="That">
+                <label for="thatcheck">That</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Radio buttons in a fieldset</legend>
+                <input id="thisradio" name="radiobutton" type="radio" value="This" Checked>
+                <label for="thisradio">This</label>
+                <br>
+                <input id="orradio" name="radiobutton" type="radio" value="Or">
+                <label for="orradio">And/Or</label>
+                <br>
+                <input id="thatradio" name="radiobutton" type="radio" value="That">
+                <label for="thatradio">That</label>
+            </fieldset>
+            <br>
+            <button type="submit">Sign up</button>
+        </form>
+
+    </main>
+</body>
+
+</html>
